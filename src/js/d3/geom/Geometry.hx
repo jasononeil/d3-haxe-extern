@@ -6,7 +6,7 @@ package js.d3.geom;
  * @author Ruben Weijers
  */
 
-private typedef Point    = {x:Float, y:Float};
+private typedef Point    = {x:Float, y:Float, ?cx:Float, ?cy:Float};
 private typedef Node     = {> Point, nodes:Array<Node>, leaf:Bool, point:Point};
 private typedef RootNode = {> Node, add:Point->Void, visit:Dynamic->Void, find:Point->Point};
 
