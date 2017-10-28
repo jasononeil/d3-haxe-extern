@@ -115,10 +115,10 @@ extern class Force implements ArrayAccess<Dynamic> {
 	public function on(type:String, listener:Dynamic):Force;
 
 	public function drag():Void;
-	public function start():Void;
-	public function stop():Void;
-	public function resume():Void;
-	public function tick():Void;
+	public function start():Force;
+	public function stop():Force;
+	public function resume():Force;
+	public function tick():Force;
 }
 
 
