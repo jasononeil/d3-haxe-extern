@@ -29,6 +29,10 @@ typedef ScaleFn = Float->Float;
 
 @:native("d3.scale.linear")
 extern class Linear {
+
+	@:selfCall
+	public function call(inValue: Float): Float;
+
 	public function invert(y:Dynamic):Dynamic;
 
 	@:overload(function():Array<Float> {})
@@ -53,6 +57,10 @@ extern class Linear {
 
 @:native("d3.scale.identity")
 extern class Identity {
+
+	@:selfCall
+	public function call(inValue: Float): Float;
+
 	public function invert(x:Dynamic):Dynamic;
 
 	@:overload(function():Array<Float> {})
@@ -68,6 +76,10 @@ extern class Identity {
 
 @:native("d3.scale.power")
 extern class Power {
+
+	@:selfCall
+	public function call(inValue: Float): Float;
+
 	public function invert(y:Dynamic):Dynamic;
 
 	@:overload(function():Array<Float> {})
@@ -95,6 +107,10 @@ extern class Power {
 
 @:native("d3.scale.log")
 extern class Log {
+
+	@:selfCall
+	public function call(inValue: Float): Float;
+
 	public function invert(y:Dynamic):Dynamic;
 
 	@:overload(function():Array<Float> {})
@@ -120,6 +136,10 @@ extern class Log {
 
 @:native("d3.scale.quantize")
 extern class Quantize {
+
+	@:selfCall
+	public function call(inValue: Float): Float;
+
 	public function invertExtend(y:Dynamic):Dynamic;
 
 	@:overload(function():Array<Float> {})
@@ -133,6 +153,10 @@ extern class Quantize {
 
 @:native("d3.scale.quantile")
 extern class Quantile {
+
+	@:selfCall
+	public function call(inValue: Float): Float;
+
 	public function invertExtend(y:Dynamic):Dynamic;
 
 	@:overload(function():Array<Float> {})
@@ -147,6 +171,10 @@ extern class Quantile {
 
 @:native("d3.scale.treshold")
 extern class Threshold {
+
+	@:selfCall
+	public function call(inValue: Float): Float;
+
 	public function invertExtend(y:Dynamic):Dynamic;
 
 	@:overload(function():Array<Float> {})
@@ -160,6 +188,9 @@ extern class Threshold {
 
 @:native("d3.scale.ordinal")
 extern class Ordinal {
+
+	@:selfCall
+	public function call(inValue: Float): Float;
 
 	@:overload(function():Array<Float> {})
 	public function domain(numbers:Array<Float>):Ordinal;
